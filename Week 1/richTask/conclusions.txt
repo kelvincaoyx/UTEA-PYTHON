@@ -1,0 +1,4 @@
+Lab results:
+average = 10.07
+sigma = 0.61
+t-score = 0.44
