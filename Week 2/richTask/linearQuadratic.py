@@ -48,7 +48,7 @@ if discriminant < 0:
 
 #when the discriminate is 0, there is only one answer. This if loop helps the program find that single point
 if discriminant == 0:
-    solutionX = -letterB/2*letterA
+    solutionX = -letterB/2/letterA
     solutionY = yValueSolver(m,d,solutionX)
     print("The solution of your linear quadratic system is: \
         \n(x , y) = (" + str(solutionX) + " , " + str(solutionY) + ")")

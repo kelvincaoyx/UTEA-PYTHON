@@ -1,0 +1,16 @@
+The
+a
+hello
+enter
+file
+text
+str
+int
+float
+while
+for 
+open
+close
+write
+input
+print
