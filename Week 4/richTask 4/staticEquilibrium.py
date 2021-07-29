@@ -45,7 +45,7 @@ def netForceCalc(weightList):
     negativeTorqueList = weightList[:5]
     counter = 4
     runcount = 1
-    while counter > 0:
+    while counter >= 0:
         negativeTorque += negativeTorqueList[counter]*0.1*runcount
         counter -=1
         runcount += 1
@@ -103,7 +103,7 @@ def helper():
         
         #caluculating the direction that the scale will go
         answer = netForceCalc(weightList)
-        
+
         #retreiving the user's guess
         userAnswer = input("Choose the correct answer (a,b,c):\n \
             a)spin left\t b)equilibrium\t c)spin right\t")
@@ -115,12 +115,12 @@ def helper():
             
             #keeps track of the wins
             winCounter += 1
-            start += 2
+            start += randomDigit(1,3)
             if start > 10:
                 start = 10
         else:
             print("\nIncorrect\n")
-            start -= 2
+            start -= randomDigit(1,3)
             if start <=0:
                 start = 1
 
